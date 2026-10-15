@@ -1,0 +1,279 @@
+
+.my-tickets-page {
+  min-height: 100vh;
+  padding: 48px 7%;
+  background: #f4f7fc;
+  color: #17233b;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.tickets-heading {
+  max-width: 760px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.tickets-eyebrow {
+  color: #3478f6;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.tickets-heading h1 {
+  margin: 10px 0;
+  font-size: clamp(30px, 4vw, 42px);
+}
+
+.tickets-heading > p:last-child {
+  color: #68758b;
+  line-height: 1.6;
+}
+
+.tickets-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 22px;
+}
+
+.booking-card {
+  padding: 26px;
+  background: #fff;
+  border: 1px solid #e2e8f2;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgb(25 45 85 / 5%);
+}
+
+.booking-card-top,
+.booking-route,
+.booking-meta,
+.booking-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.booking-card-top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edf0f6;
+}
+
+.booking-card-top h2 {
+  margin: 6px 0 0;
+  font-size: 23px;
+}
+
+.booking-label {
+  display: block;
+  color: #8290a6;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.booking-status {
+  padding: 8px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.status-confirmed {
+  color: #137747;
+  background: #e3f7ec;
+}
+
+.status-cancelled {
+  color: #b42318;
+  background: #feeceb;
+}
+
+.status-pending {
+  color: #9a6700;
+  background: #fff4d6;
+}
+
+.booking-route {
+  padding: 24px 0;
+}
+
+.booking-route h3 {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.booking-route p {
+  margin: 0;
+  color: #77849a;
+  font-size: 13px;
+}
+
+.route-plane {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #3478f6;
+}
+
+.route-plane span {
+  width: 30%;
+  height: 1px;
+  background: #cbd8ef;
+}
+
+.booking-price {
+  text-align: right;
+}
+
+.booking-meta {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 18px 0;
+  border-top: 1px solid #edf0f6;
+  border-bottom: 1px solid #edf0f6;
+}
+
+.booking-meta strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.booking-actions {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.booking-actions button {
+  padding: 11px 17px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.view-ticket-button {
+  color: #2464dc;
+  background: #edf4ff;
+  border-color: #d7e5ff !important;
+}
+
+.view-ticket-button:hover {
+  background: #dfeaff;
+}
+
+.cancel-ticket-button {
+  color: #fff;
+  background: #d92d20;
+}
+
+.cancel-ticket-button:hover {
+  background: #b42318;
+}
+
+.cancel-ticket-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ticket-details {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f6f8fc;
+  overflow-wrap: anywhere;
+}
+
+.ticket-details h3 {
+  margin-top: 0;
+}
+
+.ticket-details p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.empty-tickets,
+.tickets-info {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 44px 20px;
+  text-align: center;
+  color: #68758b;
+}
+
+.empty-tickets {
+  background: #fff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 18px;
+}
+
+.empty-tickets h2 {
+  color: #17233b;
+}
+
+.empty-ticket-icon {
+  font-size: 42px;
+}
+
+.tickets-message {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.success-message {
+  color: #137747;
+  background: #e3f7ec;
+}
+
+.error-message {
+  color: #b42318;
+  background: #feeceb;
+}
+
+@media (max-width: 600px) {
+  .my-tickets-page {
+    padding: 32px 16px;
+  }
+
+  .booking-card {
+    padding: 18px;
+  }
+
+  .booking-route {
+    flex-wrap: wrap;
+  }
+
+  .route-plane {
+    min-width: 50px;
+  }
+
+  .booking-price {
+    text-align: left;
+  }
+
+  .booking-meta {
+    gap: 20px;
+  }
+
+  .booking-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .booking-actions button {
+    width: 100%;
+  }
+}

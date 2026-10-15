@@ -1,0 +1,118 @@
+
+.create-flight-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f4f7fb, #e8efff);
+  font-family: Inter, Arial, sans-serif;
+}
+
+.create-flight-card {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+.create-flight-card h2 {
+  margin: 0 0 8px;
+  color: #172554;
+  font-size: 28px;
+}
+
+.create-flight-subtitle {
+  margin: 0 0 28px;
+  color: #64748b;
+}
+
+.flight-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.create-flight-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.create-flight-form input,
+.create-flight-form select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #0f172a;
+  font-size: 14px;
+  outline: none;
+}
+
+.create-flight-form input:focus,
+.create-flight-form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.create-flight-button {
+  width: 100%;
+  margin-top: 26px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.create-flight-button:hover {
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+.create-flight-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.flight-message {
+  margin-top: 20px;
+  padding: 13px 15px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+
+.flight-message.success {
+  border: 1px solid #86efac;
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.flight-message.error {
+  border: 1px solid #fca5a5;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  .create-flight-page {
+    padding: 24px 12px;
+  }
+
+  .create-flight-card {
+    padding: 22px 16px;
+  }
+
+  .flight-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
