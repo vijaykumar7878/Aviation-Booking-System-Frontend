@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./CancelFlight.css";
 
-const API_URL = "http://13.201.100.65:8080/api/flights";
+const API_URL = "https://sleeve-highway-significance-forum.trycloudflare.com/api/flights";
 
 function CancelFlight() {
   const [flightId, setFlightId] = useState("");

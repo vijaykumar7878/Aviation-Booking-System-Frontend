@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
 
-const API_URL = 'http://13.201.100.65:8080/api/customers/login';
+const API_URL = 'https://sleeve-highway-significance-forum.trycloudflare.com/api/customers/login';
 
 function Login() {
   const navigate = useNavigate();

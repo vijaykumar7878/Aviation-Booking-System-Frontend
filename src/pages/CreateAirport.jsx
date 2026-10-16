@@ -20,7 +20,7 @@ function CreateAirport() {
 
     try {
       const response = await fetch(
-       "http://13.201.100.65:8080/api/airports",
+       "https://sleeve-highway-significance-forum.trycloudflare.com/api/airports",
         {
           method: "POST",
           headers: {

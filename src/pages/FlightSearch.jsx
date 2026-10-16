@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './FlightSearch.css';
 
-const API_URL = 'http://13.201.100.65:8080/api/flights/search';
+const API_URL = 'https://sleeve-highway-significance-forum.trycloudflare.com/api/flights/search';
 
 function FlightSearch() {
   const navigate = useNavigate();
