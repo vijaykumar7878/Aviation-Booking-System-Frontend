@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "./MyTickets.css";
 
-const API_URL = "https://sleeve-highway-significance-forum.trycloudflare.com/api/bookings";
+const API_URL = "https://governor-set-element-maximize.trycloudflare.com/api/bookings";
 
 function MyTickets() {
   const [tickets, setTickets] = useState([]);

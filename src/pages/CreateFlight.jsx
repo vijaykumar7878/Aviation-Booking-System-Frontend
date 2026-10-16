@@ -31,7 +31,7 @@ function CreateFlight() {
     const fetchAirports = async () => {
       try {
         const response = await fetch(
-         "https://sleeve-highway-significance-forum.trycloudflare.com/api/airports"
+         "https://governor-set-element-maximize.trycloudflare.com/api/airports"
         );
 
         if (!response.ok) {
@@ -148,7 +148,7 @@ function CreateFlight() {
 
     try {
       const response = await fetch(
-        "https://sleeve-highway-significance-forum.trycloudflare.com/api/flights",
+        "https://governor-set-element-maximize.trycloudflare.com/api/flights",
         {
           method: "POST",
           headers: {

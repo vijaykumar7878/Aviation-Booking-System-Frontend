@@ -20,7 +20,7 @@ function CreateAirport() {
 
     try {
       const response = await fetch(
-       "https://sleeve-highway-significance-forum.trycloudflare.com/api/airports",
+       "https://governor-set-element-maximize.trycloudflare.com/api/airports",
         {
           method: "POST",
           headers: {

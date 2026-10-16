@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Booking.css';
 
-const API_URL = 'https://sleeve-highway-significance-forum.trycloudflare.com/api/bookings';
+const API_URL = 'https://governor-set-element-maximize.trycloudflare.com/api/bookings';
 
 async function readResponse(response) {
 const text = await response.text();
